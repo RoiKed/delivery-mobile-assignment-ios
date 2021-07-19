@@ -25,5 +25,3 @@ struct Parcel: Decodable {
     let barcode: String
     let display_identifier: String
 }
-
-

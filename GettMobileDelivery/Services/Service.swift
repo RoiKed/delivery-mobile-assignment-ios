@@ -51,12 +51,14 @@ class Service {
                 //parsing the data
                 if let destinations =  try? JSONDecoder().decode([Destination].self, from: data) {
                     completion(destinations,response,nil)
+                }else {
+                    completion(nil,response,ServiceError.parsingFailed)
                 }
             }
         }.resume()
     }
     
-    func fetchRoute(from source: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D, completion: @escaping (String?,Error?) ->()) {
+    func fetchRoute(from source: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D, completion: @escaping (Direction?,Error?) ->()) {
         
         var routeUrlComponents = ResourceHelper.basicRouteUrlComponents
         let sourceQueryItem = URLQueryItem(name: "origin", value: "\(source.latitude),\(source.longitude)")
@@ -76,25 +78,18 @@ class Service {
                 return
             }
 
-            guard let jsonResponse = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: Any]
-            else {
+            if let directions = try? JSONDecoder().decode(Direction.self, from: data!) {
+                completion(directions,nil)
+            } else {
                 completion(nil,ServiceError.parsingFailed)
-                return
             }
-            guard jsonResponse["status"] as! String != "REQUEST_DENIED" else {
-                completion(nil,ServiceError.badResponse)
-                return
-            }
-            guard let routes = jsonResponse["routes"] as? [Any], routes.count > 0,
-                  let route = routes[0] as? [String: Any],
-                  let overview_polyline = route["overview_polyline"] as? [String: Any],
-                  let polyLineString = overview_polyline["points"] as? String else {
-                return
-            }
-            completion(polyLineString, nil)
             return
         })
         task.resume()
+    }
+    
+    func getDirections(origin:Double, destination:Double, completion:([Direction])) {
+        
     }
 }
 

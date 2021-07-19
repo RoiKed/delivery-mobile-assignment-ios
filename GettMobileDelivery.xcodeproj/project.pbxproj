@@ -22,6 +22,8 @@
 		2392BD6526A3494900F8F2D5 /* BasicAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2392BD6426A3494900F8F2D5 /* BasicAlertViewController.xib */; };
 		2392BD6726A46EBD00F8F2D5 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD6626A46EBC00F8F2D5 /* LaunchView.swift */; };
 		2392BD6926A46F2200F8F2D5 /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2392BD6826A46F2200F8F2D5 /* LaunchView.xib */; };
+		2392BD6B26A5AD7300F8F2D5 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD6A26A5AD7300F8F2D5 /* Direction.swift */; };
+		2392BD6D26A5B2F600F8F2D5 /* DirectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD6C26A5B2F600F8F2D5 /* DirectionViewModel.swift */; };
 		F4B1672F2642C9F600590287 /* GoogleServices-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B1672E2642C9F600590287 /* GoogleServices-Info.plist */; };
 		F4BDE32126427635006FC21D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDE32026427635006FC21D /* AppDelegate.swift */; };
 		F4BDE32326427635006FC21D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDE32226427635006FC21D /* SceneDelegate.swift */; };
@@ -45,6 +47,8 @@
 		2392BD6426A3494900F8F2D5 /* BasicAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicAlertViewController.xib; sourceTree = "<group>"; };
 		2392BD6626A46EBC00F8F2D5 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		2392BD6826A46F2200F8F2D5 /* LaunchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchView.xib; sourceTree = "<group>"; };
+		2392BD6A26A5AD7300F8F2D5 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		2392BD6C26A5B2F600F8F2D5 /* DirectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionViewModel.swift; sourceTree = "<group>"; };
 		78139C859339A4F2746E6514 /* Pods-GettMobileDelivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GettMobileDelivery.release.xcconfig"; path = "Target Support Files/Pods-GettMobileDelivery/Pods-GettMobileDelivery.release.xcconfig"; sourceTree = "<group>"; };
 		C825DDB06594A0E2B233C8A7 /* Pods_GettMobileDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GettMobileDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3244AAC6C3F524080D2EE68 /* Pods-GettMobileDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GettMobileDelivery.debug.xcconfig"; path = "Target Support Files/Pods-GettMobileDelivery/Pods-GettMobileDelivery.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				2392BD48269F6B6700F8F2D5 /* Destination.swift */,
+				2392BD6A26A5AD7300F8F2D5 /* Direction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				2392BD5426A0017200F8F2D5 /* DestinationViewModel.swift */,
+				2392BD6C26A5B2F600F8F2D5 /* DirectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -308,10 +314,12 @@
 				F4BDE32126427635006FC21D /* AppDelegate.swift in Sources */,
 				2392BD4C269F6E5F00F8F2D5 /* Service.swift in Sources */,
 				2392BD5D26A173C400F8F2D5 /* ResourceHelper.swift in Sources */,
+				2392BD6D26A5B2F600F8F2D5 /* DirectionViewModel.swift in Sources */,
 				2392BD5926A08E5500F8F2D5 /* DeliveryDetailsView.swift in Sources */,
 				2392BD49269F6B6700F8F2D5 /* Destination.swift in Sources */,
 				2392BD5B26A0CBBB00F8F2D5 /* DeliveryDetailsViewViewController.swift in Sources */,
 				F4BDE32326427635006FC21D /* SceneDelegate.swift in Sources */,
+				2392BD6B26A5AD7300F8F2D5 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

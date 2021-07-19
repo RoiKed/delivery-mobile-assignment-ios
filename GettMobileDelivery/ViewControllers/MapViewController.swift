@@ -16,6 +16,7 @@ class MapViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     var destinationsVM: DestinationViewModel?
+    var directionVM: DirectionViewModel?
     var initialLocation: CLLocation?
     let deaultZoom: Float = 16
     var shouldNavigateToPickup = false
@@ -168,23 +169,34 @@ class MapViewController: UIViewController {
     }
     
     func drawPath(from: CLLocationCoordinate2D, to: CLLocationCoordinate2D) {
-        Service.shared.fetchRoute(from: from, to: to) { [weak self] route, error in
+        Service.shared.fetchRoute(from: from, to: to) { [weak self] direction, error in
             if let error = error {
                 print("\(error.localizedDescription) -> \(error)")
             } else {
-                if let route = route, let self = self {
+                if let direction = direction, let self = self {
+                    self.directionVM = DirectionViewModel(direction: direction)
                     DispatchQueue.main.async {
-                        let path = GMSPath(fromEncodedPath: route)
-                        let polyline = GMSPolyline(path: path)
-                        polyline.strokeWidth = 5.0
-                        polyline.strokeColor = .darkGray
-                        polyline.map = self.mapView
-                        if let launchView = self.topMostView as? LaunchView {
-                            self.removeLounchView(launchView)
+                        self.setRouteInstructions()
+                        if let polyline = self.directionVM?.getPolyline() {
+                            let path = GMSPath(fromEncodedPath: polyline)
+                            let polyline = GMSPolyline(path: path)
+                            polyline.strokeWidth = 5.0
+                            polyline.strokeColor = .darkGray
+                            polyline.map = self.mapView
+                            if let launchView = self.topMostView as? LaunchView {
+                                self.removeLounchView(launchView)
+                            }
                         }
+                        
                     }
                 }
             }
+        }
+    }
+    
+    private func setRouteInstructions() {
+        if let instructions = self.directionVM?.instructions {
+            self.deliveryInformationView.instructions = instructions
         }
     }
     
