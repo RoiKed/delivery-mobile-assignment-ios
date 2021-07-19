@@ -8,16 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		07E2776ADE53E29B1DC2719A /* Pods_GettMobileDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C825DDB06594A0E2B233C8A7 /* Pods_GettMobileDelivery.framework */; };
+		2392BD49269F6B6700F8F2D5 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD48269F6B6700F8F2D5 /* Destination.swift */; };
+		2392BD4C269F6E5F00F8F2D5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD4B269F6E5F00F8F2D5 /* Service.swift */; };
+		2392BD4E269F72AA00F8F2D5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD4D269F72AA00F8F2D5 /* MapViewController.swift */; };
+		2392BD53269F820000F8F2D5 /* journey.json in Resources */ = {isa = PBXBuildFile; fileRef = 2392BD52269F820000F8F2D5 /* journey.json */; };
+		2392BD5526A0017200F8F2D5 /* DestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD5426A0017200F8F2D5 /* DestinationViewModel.swift */; };
+		2392BD5726A08E4A00F8F2D5 /* DeliveryDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2392BD5626A08E4A00F8F2D5 /* DeliveryDetailsView.xib */; };
+		2392BD5926A08E5500F8F2D5 /* DeliveryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD5826A08E5500F8F2D5 /* DeliveryDetailsView.swift */; };
+		2392BD5B26A0CBBB00F8F2D5 /* DeliveryDetailsViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD5A26A0CBBB00F8F2D5 /* DeliveryDetailsViewViewController.swift */; };
+		2392BD5D26A173C400F8F2D5 /* ResourceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD5C26A173C300F8F2D5 /* ResourceHelper.swift */; };
+		2392BD5F26A1DFD700F8F2D5 /* courier.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2392BD5E26A1DFD700F8F2D5 /* courier.gif */; };
+		2392BD6326A3493A00F8F2D5 /* BasicAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD6226A3493900F8F2D5 /* BasicAlertViewController.swift */; };
+		2392BD6526A3494900F8F2D5 /* BasicAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2392BD6426A3494900F8F2D5 /* BasicAlertViewController.xib */; };
+		2392BD6726A46EBD00F8F2D5 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392BD6626A46EBC00F8F2D5 /* LaunchView.swift */; };
+		2392BD6926A46F2200F8F2D5 /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2392BD6826A46F2200F8F2D5 /* LaunchView.xib */; };
 		F4B1672F2642C9F600590287 /* GoogleServices-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B1672E2642C9F600590287 /* GoogleServices-Info.plist */; };
 		F4BDE32126427635006FC21D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDE32026427635006FC21D /* AppDelegate.swift */; };
 		F4BDE32326427635006FC21D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDE32226427635006FC21D /* SceneDelegate.swift */; };
-		F4BDE32526427635006FC21D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDE32426427635006FC21D /* ViewController.swift */; };
 		F4BDE32826427635006FC21D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BDE32626427635006FC21D /* Main.storyboard */; };
 		F4BDE32A26427637006FC21D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BDE32926427637006FC21D /* Assets.xcassets */; };
 		F4BDE32D26427637006FC21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BDE32B26427637006FC21D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2392BD48269F6B6700F8F2D5 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		2392BD4B269F6E5F00F8F2D5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2392BD4D269F72AA00F8F2D5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2392BD52269F820000F8F2D5 /* journey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = journey.json; sourceTree = "<group>"; };
+		2392BD5426A0017200F8F2D5 /* DestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewModel.swift; sourceTree = "<group>"; };
+		2392BD5626A08E4A00F8F2D5 /* DeliveryDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryDetailsView.xib; sourceTree = "<group>"; };
+		2392BD5826A08E5500F8F2D5 /* DeliveryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsView.swift; sourceTree = "<group>"; };
+		2392BD5A26A0CBBB00F8F2D5 /* DeliveryDetailsViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsViewViewController.swift; sourceTree = "<group>"; };
+		2392BD5C26A173C300F8F2D5 /* ResourceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceHelper.swift; sourceTree = "<group>"; };
+		2392BD5E26A1DFD700F8F2D5 /* courier.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = courier.gif; sourceTree = "<group>"; };
+		2392BD6226A3493900F8F2D5 /* BasicAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAlertViewController.swift; sourceTree = "<group>"; };
+		2392BD6426A3494900F8F2D5 /* BasicAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicAlertViewController.xib; sourceTree = "<group>"; };
+		2392BD6626A46EBC00F8F2D5 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		2392BD6826A46F2200F8F2D5 /* LaunchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchView.xib; sourceTree = "<group>"; };
 		78139C859339A4F2746E6514 /* Pods-GettMobileDelivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GettMobileDelivery.release.xcconfig"; path = "Target Support Files/Pods-GettMobileDelivery/Pods-GettMobileDelivery.release.xcconfig"; sourceTree = "<group>"; };
 		C825DDB06594A0E2B233C8A7 /* Pods_GettMobileDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GettMobileDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3244AAC6C3F524080D2EE68 /* Pods-GettMobileDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GettMobileDelivery.debug.xcconfig"; path = "Target Support Files/Pods-GettMobileDelivery/Pods-GettMobileDelivery.debug.xcconfig"; sourceTree = "<group>"; };
@@ -25,7 +52,6 @@
 		F4BDE31D26427635006FC21D /* GettMobileDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GettMobileDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BDE32026427635006FC21D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BDE32226427635006FC21D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4BDE32426427635006FC21D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4BDE32726427635006FC21D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4BDE32926427637006FC21D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4BDE32C26427637006FC21D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +70,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2392BD43269F699900F8F2D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2392BD4D269F72AA00F8F2D5 /* MapViewController.swift */,
+				2392BD5A26A0CBBB00F8F2D5 /* DeliveryDetailsViewViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2392BD45269F69B300F8F2D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2392BD48269F6B6700F8F2D5 /* Destination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2392BD46269F69C200F8F2D5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2392BD5426A0017200F8F2D5 /* DestinationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2392BD47269F69CC00F8F2D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2392BD5626A08E4A00F8F2D5 /* DeliveryDetailsView.xib */,
+				2392BD5826A08E5500F8F2D5 /* DeliveryDetailsView.swift */,
+				2392BD6226A3493900F8F2D5 /* BasicAlertViewController.swift */,
+				2392BD6426A3494900F8F2D5 /* BasicAlertViewController.xib */,
+				2392BD6626A46EBC00F8F2D5 /* LaunchView.swift */,
+				2392BD6826A46F2200F8F2D5 /* LaunchView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2392BD4A269F6DAB00F8F2D5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2392BD4B269F6E5F00F8F2D5 /* Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2392BD4F269F812400F8F2D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2392BD52269F820000F8F2D5 /* journey.json */,
+				2392BD5E26A1DFD700F8F2D5 /* courier.gif */,
+				2392BD5C26A173C300F8F2D5 /* ResourceHelper.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3E02E02E1A1289E1339C8157 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +164,14 @@
 		F4BDE31F26427635006FC21D /* GettMobileDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				2392BD4F269F812400F8F2D5 /* Resources */,
+				2392BD4A269F6DAB00F8F2D5 /* Services */,
+				2392BD47269F69CC00F8F2D5 /* Views */,
+				2392BD46269F69C200F8F2D5 /* ViewModels */,
+				2392BD45269F69B300F8F2D5 /* Models */,
+				2392BD43269F699900F8F2D5 /* ViewControllers */,
 				F4BDE32026427635006FC21D /* AppDelegate.swift */,
 				F4BDE32226427635006FC21D /* SceneDelegate.swift */,
-				F4BDE32426427635006FC21D /* ViewController.swift */,
 				F4BDE32626427635006FC21D /* Main.storyboard */,
 				F4BDE32926427637006FC21D /* Assets.xcassets */,
 				F4BDE32B26427637006FC21D /* LaunchScreen.storyboard */,
@@ -153,9 +240,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2392BD6926A46F2200F8F2D5 /* LaunchView.xib in Resources */,
+				2392BD53269F820000F8F2D5 /* journey.json in Resources */,
 				F4BDE32D26427637006FC21D /* LaunchScreen.storyboard in Resources */,
 				F4BDE32A26427637006FC21D /* Assets.xcassets in Resources */,
+				2392BD5F26A1DFD700F8F2D5 /* courier.gif in Resources */,
+				2392BD5726A08E4A00F8F2D5 /* DeliveryDetailsView.xib in Resources */,
 				F4B1672F2642C9F600590287 /* GoogleServices-Info.plist in Resources */,
+				2392BD6526A3494900F8F2D5 /* BasicAlertViewController.xib in Resources */,
 				F4BDE32826427635006FC21D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,8 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4BDE32526427635006FC21D /* ViewController.swift in Sources */,
+				2392BD6326A3493A00F8F2D5 /* BasicAlertViewController.swift in Sources */,
+				2392BD6726A46EBD00F8F2D5 /* LaunchView.swift in Sources */,
+				2392BD4E269F72AA00F8F2D5 /* MapViewController.swift in Sources */,
+				2392BD5526A0017200F8F2D5 /* DestinationViewModel.swift in Sources */,
 				F4BDE32126427635006FC21D /* AppDelegate.swift in Sources */,
+				2392BD4C269F6E5F00F8F2D5 /* Service.swift in Sources */,
+				2392BD5D26A173C400F8F2D5 /* ResourceHelper.swift in Sources */,
+				2392BD5926A08E5500F8F2D5 /* DeliveryDetailsView.swift in Sources */,
+				2392BD49269F6B6700F8F2D5 /* Destination.swift in Sources */,
+				2392BD5B26A0CBBB00F8F2D5 /* DeliveryDetailsViewViewController.swift in Sources */,
 				F4BDE32326427635006FC21D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,13 +460,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8JNH7ZGAY6;
+				DEVELOPMENT_TEAM = C58B33L5E6;
 				INFOPLIST_FILE = GettMobileDelivery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gett.mobile.delivery.GettMobileDelivery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roiKedarya.GettMobileDelivery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,8 +479,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8JNH7ZGAY6;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GettMobileDelivery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,6 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gett.mobile.delivery.GettMobileDelivery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
