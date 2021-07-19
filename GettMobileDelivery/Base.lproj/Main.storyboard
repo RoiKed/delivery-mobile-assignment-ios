@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeh-V9-rVg" userLabel="informationView" customClass="DeliveryDetailsView" customModule="GettMobileDelivery" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="90"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="120"/>
                                 <color key="backgroundColor" red="0.74117647058823533" green="0.81176470588235294" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQo-jZ-8Du" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="178" width="414" height="684"/>
+                                <rect key="frame" x="0.0" y="208" width="414" height="654"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfI-mi-vld">
-                                        <rect key="frame" x="30" y="617" width="354" height="32"/>
+                                        <rect key="frame" x="30" y="587" width="354" height="32"/>
                                         <color key="backgroundColor" red="0.29411764705882354" green="0.36078431372549019" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Arrived">
@@ -43,7 +43,6 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="WfI-mi-vld" firstAttribute="centerX" secondItem="DQo-jZ-8Du" secondAttribute="centerX" id="AXQ-6M-9v7"/>
-                                    <constraint firstItem="WfI-mi-vld" firstAttribute="leading" secondItem="DQo-jZ-8Du" secondAttribute="leading" constant="30" id="ShK-bq-5rS"/>
                                     <constraint firstAttribute="bottom" secondItem="WfI-mi-vld" secondAttribute="bottom" constant="35" id="f9m-C0-Wdu"/>
                                     <constraint firstAttribute="trailing" secondItem="WfI-mi-vld" secondAttribute="trailing" constant="30" id="xu7-Tf-WG4"/>
                                 </constraints>
@@ -57,7 +56,7 @@
                             <constraint firstItem="oeh-V9-rVg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OUm-li-zZd"/>
                             <constraint firstItem="DQo-jZ-8Du" firstAttribute="top" secondItem="oeh-V9-rVg" secondAttribute="bottom" id="Rkk-Dp-Zhy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oeh-V9-rVg" secondAttribute="trailing" id="Z9O-nH-jx0"/>
-                            <constraint firstItem="DQo-jZ-8Du" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="ZOx-7R-KU0"/>
+                            <constraint firstItem="DQo-jZ-8Du" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="ZOx-7R-KU0"/>
                             <constraint firstItem="DQo-jZ-8Du" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aWG-gu-4Dw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DQo-jZ-8Du" secondAttribute="bottom" id="tfJ-eQ-Lpe"/>
                         </constraints>
