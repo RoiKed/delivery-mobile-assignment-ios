@@ -50,7 +50,7 @@ class DeliveryDetailsViewViewController: UIViewController {
     
     private func setTitles() {
         if let type = type {
-            titleLabel.text = type
+            titleLabel.text = type == ResourceHelper.pickupType ? "Pickup" : "Drop-Off"
             subTitleLabel.text = type == ResourceHelper.pickupType ? "Parcels to collect" : "parcels to deliver"
         }
     }

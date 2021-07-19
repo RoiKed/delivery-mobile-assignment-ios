@@ -78,7 +78,8 @@ class MapViewController: UIViewController {
     private func setDeliveryDetails() {
         if let destinationsVM = self.destinationsVM ,let destination = destinationsVM.getDestination(at: 0) {
             self.deliveryInformationView.addressLabel.text = destinationsVM.getDestinationAddress(destination)
-            self.deliveryInformationView.statusLabel.text = destinationsVM.getDestinationType(destination)
+            let type = destinationsVM.getDestinationType(destination)
+            self.deliveryInformationView.statusLabel.text = type == ResourceHelper.pickupType ? "Pickup Point" : "Drop Off"
         }
     }
     
