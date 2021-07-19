@@ -21,7 +21,8 @@ class ResourceHelper {
         urlComponents.queryItems = [
                 URLQueryItem(name: "sensor", value: "false"),
                 URLQueryItem(name: "key", value: ResourceHelper.apiKey),
-                URLQueryItem(name: "mode", value: "driving")            
+                URLQueryItem(name: "mode", value: "driving"),
+                URLQueryItem(name: "language", value: "EN")
             ]
         return urlComponents
     }()
